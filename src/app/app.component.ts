@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, Input } from '@angular/core';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @Component({
   selector: 'app-root',
+  template: ` <app-dashboard />`,
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [DashboardComponent],
+  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'todo_app';
-}
+export class AppComponent {}
